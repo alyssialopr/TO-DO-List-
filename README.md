@@ -31,5 +31,3 @@ package.json # Dépendances
 | POST    | `/tasks`     | Ajouter une tâche      |  
 | PUT     | `/tasks/:id` | Modifier une tâche     |  
 | DELETE  | `/tasks/:id` | Supprimer une tâche    |  
-
-*Documentez vos choix techniques dans le fichier NOTES.md*  
