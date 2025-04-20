@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #taskInput {
+    padding: 8px;
+    width: 70%;
+  }
+  
+  #addTaskBtn {
+    padding: 8px 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .done-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .filter{
+    margin: 15px 0;
+  }
+
+  .edit-input {
+    font-size: 1em;
+    padding: 4px;
+    width: 70%;
+  }
+  
+
+  /* Animation CSS */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 0.4s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-out {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .fade-out.removing {
+    opacity: 0;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-5px); }
+  }
+
+  #loader {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
