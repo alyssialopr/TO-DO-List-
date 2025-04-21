@@ -84,10 +84,13 @@ const renderTask = (task) => {
         if (task.completed) {
           span.style.color = 'gray';
           span.style.textDecoration = 'line-through';
+          span.style.fontStyle = 'italic';
         } else {
           span.style.color = '';
           span.style.textDecoration = '';
+          span.style.fontStyle = '';
         }
+
         li.replaceChild(span, input);
 
         const tasks = loadFromLocalStorage().map(t =>
@@ -118,8 +121,12 @@ const renderTask = (task) => {
         span.textContent = updatedTask.name;
         if (updatedTask.completed) {
           span.style.color = 'gray';
+          span.style.fontStyle = 'italic';
+          span.style.textDecoration = 'line-through';
         } else {
           span.style.color = '';
+          span.style.fontStyle = '';
+          span.style.textDecoration = '';
         }
 
         const tasks = loadFromLocalStorage().map(t =>
